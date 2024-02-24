@@ -1,27 +1,31 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main(){
+int main()
+{
     int n;
-    cin>>n;
+    cin >> n;
     int arr[n];
-    for(int i =0;i<n;i++){
-        cin>>arr[i];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
     }
 
     int hash[13] = {0};
-    for(int i=0;i<n;i++){
+    for (int i = 0; i < n; i++)
+    {
         hash[arr[i]] += 1;
     }
 
     int num;
-    cin>>num;
-    while(num--){
+    cin >> num;
+    while (num--)
+    {
         int number;
-        cin>>number;
-        //fetch
-        cout<<hash[number]<<endl;
+        cin >> number;
+        // fetch
+        cout << hash[number] << endl;
     }
 
     return 0;
